@@ -58,7 +58,7 @@ const nav = ()=>{
                 </>
             )}
 
-            {isAuth() && isAuth().role === 'Admin' && (
+            {isAuth() && isAuth().role === 'admin' && (
                 <li className="nav-item p-1">
                     <Link href="/admin">
                         <a className="nav-link text-dark  text-center text-top"> <span className='text-span4'>Admin 's Dashboard</span></a>
