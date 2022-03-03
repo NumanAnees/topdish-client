@@ -123,7 +123,8 @@ const Update = ({ oldCategory, token }) => {
     );
 };
 Update.getInitialProps = async ({ req, query, token }) => {
-    
+    const API = "https://top-dish.herokuapp.com/api"
+    const APP_NAME = "Top Dish"
     const response = await axios.post(`${API}/category/${query.slug}`);
     return { oldCategory: response.data.category, token };
 };

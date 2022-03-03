@@ -204,6 +204,8 @@ const Update = ({ oldLink, token }) => {
     );
 };
 Update.getInitialProps = async ({ req, token, query }) => {
+     const API = "https://top-dish.herokuapp.com/api"
+    const APP_NAME = "Top Dish"
     const response = await axios.get(`${API}/link/${query.id}`);
     return { oldLink: response.data, token };
 };

@@ -200,6 +200,8 @@ const Links = ({ query, category, links, totalLinks, linksLimit, linkSkip }) => 
 };
 
 Links.getInitialProps = async ({ query, req }) => {
+    const API = "https://top-dish.herokuapp.com/api"
+    const APP_NAME = "Top Dish"
     let skip = 0;
     let limit = 10;
 
