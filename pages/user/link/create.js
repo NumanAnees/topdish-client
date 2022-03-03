@@ -198,7 +198,7 @@ const Create = ({ token }) => {
             </div>
             </div>
         </Layout>
-       <Footer/>
+       {/* <Footer/> */}
         </>
     );
 };

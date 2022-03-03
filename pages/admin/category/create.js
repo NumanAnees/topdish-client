@@ -8,7 +8,7 @@ import Layout from '../../../components/Layout';
 import withAdmin from '../../withAdmin';
 import 'react-quill/dist/quill.snow.css';
 import Head from 'next/head';
-import Footer from "../../../components/Footer"
+// import Footer from "../../../components/Footer"
 
 
 const Create = ({ user, token }) => {
@@ -114,7 +114,7 @@ const Create = ({ user, token }) => {
             </div>
             </div>
         </Layout>
-        <Footer/>
+        {/* <Footer/> */}
         </>
 
     );

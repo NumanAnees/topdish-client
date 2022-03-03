@@ -199,7 +199,7 @@ const Update = ({ oldLink, token }) => {
             </div>
             </div>
         </Layout>
-        <Footer/>
+        {/* <Footer/> */}
         </>
     );
 };
