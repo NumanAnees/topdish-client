@@ -5,7 +5,7 @@ import { getCookie } from '../helpers/auth';
 
 
 const withUser = Page => {
-     const API = "http://localhost:8000/api"
+     const API = "https://top-dish.herokuapp.com/api"
     const APP_NAME = "Top Dish"
     const WithAuthUser = props => <Page {...props} />;
     WithAuthUser.getInitialProps = async context => {

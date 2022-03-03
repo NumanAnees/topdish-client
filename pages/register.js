@@ -7,7 +7,7 @@ import {authenticate, isAuth} from "../helpers/auth"
 import Router from 'next/router';
 import Head from 'next/head';
 const Register = () => {
-     const API = "http://localhost:8000/api"
+     const API = "https://top-dish.herokuapp.com/api"
     const APP_NAME = "Top Dish"
      const head = () => (
         <Head>

@@ -10,7 +10,7 @@ import {EyeFilled } from "@ant-design/icons";
 import Head from 'next/head';
 
 const User = ({ user, userLinks, token }) => {
-     const API = "http://localhost:8000/api"
+     const API = "https://top-dish.herokuapp.com/api"
     const APP_NAME = "Top Dish"
     const head = () => (
         <Head>

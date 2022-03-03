@@ -3,7 +3,7 @@ import axios from 'axios';
 import { getCookie } from '../helpers/auth';
 
 const withAdmin = Page => {
-     const API = "http://localhost:8000/api"
+     const API = "https://top-dish.herokuapp.com/api"
     const APP_NAME = "Top Dish"
     const WithAdminUser = props => <Page {...props} />;
     WithAdminUser.getInitialProps = async context => {

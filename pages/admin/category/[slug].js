@@ -11,7 +11,7 @@ import Head from 'next/head';
 import Footer from "../../../components/Footer"
 
 const Update = ({ oldCategory, token }) => {
-    const API = "http://localhost:8000/api"
+    const API = "https://top-dish.herokuapp.com/api"
     const APP_NAME = "Top Dish"
     const head = () => (
         <Head>
@@ -123,6 +123,7 @@ const Update = ({ oldCategory, token }) => {
     );
 };
 Update.getInitialProps = async ({ req, query, token }) => {
+    
     const response = await axios.post(`${API}/category/${query.slug}`);
     return { oldCategory: response.data.category, token };
 };

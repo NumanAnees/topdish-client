@@ -13,7 +13,7 @@ import Footer from '../../components/Footer';
 
 
 const Admin = ({token}) => {
-     const API = "http://localhost:8000/api"
+     const API = "https://top-dish.herokuapp.com/api"
     const APP_NAME = "Top Dish"
     const head = () => (
         <Head>

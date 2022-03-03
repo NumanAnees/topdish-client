@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 
 
 const Home = ({ categories }) => {
-     const API = "http://localhost:8000/api"
+     const API = "https://top-dish.herokuapp.com/api"
     const APP_NAME = "Top Dish"
     const head = () => (
         <Head>
@@ -127,7 +127,7 @@ const Home = ({ categories }) => {
 };
 
 Home.getInitialProps = async () => {
-     const API = "http://localhost:8000/api"
+     const API = "https://top-dish.herokuapp.com/api"
     const APP_NAME = "Top Dish"
     const response = await axios.get(`${API}/categories`);
     return {

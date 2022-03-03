@@ -10,7 +10,7 @@ import { showSuccessMessage, showErrorMessage } from '../../../helpers/alerts';
 import Head from 'next/head';
 
 const Update = ({ oldLink, token }) => {
-     const API = "http://localhost:8000/api"
+     const API = "https://top-dish.herokuapp.com/api"
     const APP_NAME = "Top Dish"
       const head = () => (
         <Head>

@@ -18,7 +18,7 @@ import Footer from '../../components/Footer';
 
 
 const Links = ({ query, category, links, totalLinks, linksLimit, linkSkip }) => {
-    const API = "http://localhost:8000/api"
+    const API = "https://top-dish.herokuapp.com/api"
     const APP_NAME = "Top Dish"
     const [allLinks, setAllLinks] = useState(links);
     const [limit, setLimit] = useState(linksLimit);
