@@ -114,7 +114,7 @@ const Read = ({ user, token }) => {
             <div className="row">{listCategories()}</div>
             </div>
         </Layout>
-        <Footer/>
+        {/* <Footer/> */}
         </>
     );
 };

@@ -201,7 +201,7 @@ const Admin = ({token}) => {
         </div>
        </div> 
     </Layout>
-    <Footer/>
+    {/* <Footer/> */}
     </>
 }
 
