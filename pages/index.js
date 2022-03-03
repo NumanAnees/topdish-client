@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 import axios from 'axios';
 import Link from 'next/link';
 import { useState,useEffect, Fragment } from 'react';
-import { API,APP_NAME } from '../config';
+// import { API,APP_NAME } from '../config';
 import moment from 'moment';
 import Head from 'next/head';
 import {EyeFilled } from "@ant-design/icons";
@@ -10,6 +10,8 @@ import Footer from '../components/Footer';
 
 
 const Home = ({ categories }) => {
+     const API = "http://localhost:8000/api"
+    const APP_NAME = "Top Dish"
     const head = () => (
         <Head>
             <title>
@@ -125,6 +127,8 @@ const Home = ({ categories }) => {
 };
 
 Home.getInitialProps = async () => {
+     const API = "http://localhost:8000/api"
+    const APP_NAME = "Top Dish"
     const response = await axios.get(`${API}/categories`);
     return {
         categories: response.data

@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic';
 const ReactQuill = dynamic(()=>import("react-quill"),{ssr:false});
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { API,APP_NAME } from '../../../config';
+// import { API,APP_NAME } from '../../../config';
 import { showSuccessMessage, showErrorMessage } from '../../../helpers/alerts';
 import Layout from '../../../components/Layout';
 import withAdmin from '../../withAdmin';
@@ -11,6 +11,8 @@ import Head from 'next/head';
 import Footer from "../../../components/Footer"
 
 const Update = ({ oldCategory, token }) => {
+    const API = "http://localhost:8000/api"
+    const APP_NAME = "Top Dish"
     const head = () => (
         <Head>
             <title>

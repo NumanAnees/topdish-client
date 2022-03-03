@@ -4,7 +4,7 @@ import Link from 'next/link';
 import axios from 'axios';
 import renderHTML from 'react-render-html';
 import moment from 'moment';
-import { API,APP_NAME } from '../../config';
+// import { API,APP_NAME } from '../../config';
 import InfiniteScroll from 'react-infinite-scroller';
 import Head from 'next/head';
 import {CaretUpFilled} from "@ant-design/icons";
@@ -18,6 +18,8 @@ import Footer from '../../components/Footer';
 
 
 const Links = ({ query, category, links, totalLinks, linksLimit, linkSkip }) => {
+    const API = "http://localhost:8000/api"
+    const APP_NAME = "Top Dish"
     const [allLinks, setAllLinks] = useState(links);
     const [limit, setLimit] = useState(linksLimit);
     const [skip, setSkip] = useState(0);

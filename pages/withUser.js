@@ -1,10 +1,12 @@
 import axios from 'axios';
 import  Router from 'next/router';
-import { API } from '../config';
+// import { API } from '../config';
 import { getCookie } from '../helpers/auth';
 
 
 const withUser = Page => {
+     const API = "http://localhost:8000/api"
+    const APP_NAME = "Top Dish"
     const WithAuthUser = props => <Page {...props} />;
     WithAuthUser.getInitialProps = async context => {
         const token = getCookie('token', context.req);

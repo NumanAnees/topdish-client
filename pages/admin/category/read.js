@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { API,APP_NAME } from '../../../config';
+// import { API,APP_NAME } from '../../../config';
 import Link from 'next/link';
 import { showSuccessMessage, showErrorMessage } from '../../../helpers/alerts';
 import Layout from '../../../components/Layout';
@@ -10,6 +10,8 @@ import Footer from "../../../components/Footer"
 
 
 const Read = ({ user, token }) => {
+    const API = "http://localhost:8000/api"
+    const APP_NAME = "Top Dish"
     const head = () => (
         <Head>
             <title>

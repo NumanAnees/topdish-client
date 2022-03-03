@@ -3,13 +3,15 @@ import Link from 'next/link';
 import Router from 'next/router';
 import axios from 'axios';
 import moment from 'moment';
-import { API,APP_NAME } from '../../config';
+// import { API,APP_NAME } from '../../config';
 import { getCookie } from '../../helpers/auth';
 import withUser from '../withUser';
 import {EyeFilled } from "@ant-design/icons";
 import Head from 'next/head';
 
 const User = ({ user, userLinks, token }) => {
+     const API = "http://localhost:8000/api"
+    const APP_NAME = "Top Dish"
     const head = () => (
         <Head>
             <title>

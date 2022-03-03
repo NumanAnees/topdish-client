@@ -5,11 +5,13 @@ import Footer from '../../../components/Footer';
 import axios from 'axios';
 import withUser from '../../withUser';
 import { getCookie, isAuth } from '../../../helpers/auth';
-import { API,APP_NAME } from '../../../config';
+// import { API,APP_NAME } from '../../../config';
 import { showSuccessMessage, showErrorMessage } from '../../../helpers/alerts';
 import Head from 'next/head';
 
 const Update = ({ oldLink, token }) => {
+     const API = "http://localhost:8000/api"
+    const APP_NAME = "Top Dish"
       const head = () => (
         <Head>
             <title>

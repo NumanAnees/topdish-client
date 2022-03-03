@@ -1,8 +1,10 @@
 import axios from 'axios';
-import { API } from '../config';
+// import { API } from '../config';
 import { getCookie } from '../helpers/auth';
 
 const withAdmin = Page => {
+     const API = "http://localhost:8000/api"
+    const APP_NAME = "Top Dish"
     const WithAdminUser = props => <Page {...props} />;
     WithAdminUser.getInitialProps = async context => {
         const token = getCookie('token', context.req);

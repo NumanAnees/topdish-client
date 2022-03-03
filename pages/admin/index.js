@@ -3,7 +3,7 @@ import withAdmin from '../withAdmin';
 import Link from 'next/link';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
-import { API,APP_NAME } from '../../config';
+// import { API,APP_NAME } from '../../config';
 import moment from 'moment';
 import  Router  from 'next/router';
 import { showSuccessMessage, showErrorMessage } from '../../helpers/alerts';
@@ -13,6 +13,8 @@ import Footer from '../../components/Footer';
 
 
 const Admin = ({token}) => {
+     const API = "http://localhost:8000/api"
+    const APP_NAME = "Top Dish"
     const head = () => (
         <Head>
             <title>

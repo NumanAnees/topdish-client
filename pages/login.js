@@ -4,13 +4,15 @@ import Link from 'next/link';
 import Router from 'next/router';
 import axios from 'axios';
 import { showSuccessMessage, showErrorMessage } from '../helpers/alerts';
-import { API,APP_NAME} from '../config';
+// import { API,APP_NAME} from '../config';
 import {authenticate, isAuth} from "../helpers/auth"
 import Head from 'next/head';
 
 
 
 const Login = () => {
+     const API = "http://localhost:8000/api"
+    const APP_NAME = "Top Dish"
       const head = () => (
         <Head>
             <title>
