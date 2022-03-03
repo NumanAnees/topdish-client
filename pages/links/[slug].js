@@ -172,7 +172,7 @@ const Links = ({ query, category, links, totalLinks, linksLimit, linkSkip }) => 
                     <h1 className="display-6 font-weight-bold text-light m-nav3 text-uppercase text-span5">{category.name} - <span className='text-span'>Locations</span></h1>
                     <div className="lead alert alert-secondary pt-4">{renderHTML(category.content || '')}</div>
                 </div>
-                <div className="col-md-4 mt-4 d-flex">
+                <div className="col-md-4 mt-4 d-flex m-nav3">
                     <img src={category.image.url}alt={category.name} style={{ width: 'auto', maxHeight: '280px' }} />
                 </div>
             </div>
