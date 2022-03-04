@@ -338,11 +338,17 @@ input[type="radio"]:checked:before {
   border: 1px solid #04e9ae;
   outline: none;
 }
+.home-btn {
+  display: none;
+}
 @media all and (max-width: 991px) {
   .locaction-btn-nav {
     display: block;
   }
   .locaction-btn {
     display: none;
+  }
+  .home-btn {
+    display: block;
   }
 }
