@@ -172,8 +172,8 @@ const Links = ({ query, category, links, totalLinks, linksLimit, linkSkip }) => 
                     <h1 className="display-6 font-weight-bold text-light m-nav3 text-uppercase text-span5">{category.name} - <span className='text-span'>Locations</span></h1>
                     <div className="lead alert alert-secondary pt-4">{renderHTML(category.content || '')}</div>
                 </div>
-                <div className="col-md-4 mt-4 d-flex m-nav3">
-                    <img src={category.image.url}alt={category.name} style={{ width: 'auto', maxHeight: '280px' }} />
+                <div className="col-md-4 mt-4 d-flex">
+                    <img src={category.image.url}alt={category.name} className="slug-img" />
                 </div>
             </div>
             <br />
@@ -181,7 +181,7 @@ const Links = ({ query, category, links, totalLinks, linksLimit, linkSkip }) => 
                 pageStart={0}
                 loadMore={loadMore}
                 hasMore={size > 0 && size >= limit}
-                loader={<img key={0} src="/static/images/loading.gif" alt="loading" />}
+                loader={<img key={0} src="/static/images/load.gif" alt="loading" style={{"height":"60px","width":"60px"}} />}
             >
                <div className="row">
                     <div className="col-md-8">{listOfLinks()}</div>

@@ -39,7 +39,7 @@ const nav = ()=>{
     <ul class="navbar-nav ml-auto">
         <li className="nav-item p-1">
                 <Link href="/">
-                  <a className="nav-link text-dark font-italic text-center text-top home-btn"> <span className='text-span4'>Home</span></a>
+                  <a className="nav-link text-dark text-center text-top home-btn"> <span className='text-span4'>Home</span></a>
                 </Link>
             </li> 
          <li className="nav-item p-1">
