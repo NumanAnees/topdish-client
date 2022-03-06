@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 
 const Footer = () => {
-     const head = () => (
+    const head = () => (
         <>
             <link
                 rel="stylesheet"
@@ -14,15 +14,19 @@ const Footer = () => {
             <link rel="stylesheet" href="/static/styles/style.css" />
         </>
     );
-  return (
-      <>
-      {head()}
+    return (
+        <>
+            {head()}
 
-<footer className="page-footer font-small marg-f pt-4">
-  <div className="footer-copyright text-center lower-f py-3 text-light">Made with ❤️ by <a href="https://www.linkedin.com/in/numananees/" target="_blank" className='footer-link'>Numan Anees</a>
-  </div>
-</footer>
-</>
+            <footer className="page-footer font-small marg-f pt-4">
+                <div className="footer-copyright text-center lower-f py-3 text-light">Made with ❤️
+                    <a href="https://www.linkedin.com/in/numananees/" target="_blank" className='footer-link'>Numan Anees</a>
+                    & 
+                                        <a href="https://www.linkedin.com/in/maaz-ghazanfar-a20972198/" target="_blank" className='footer-link'>Maaz</a>
+
+                </div>
+            </footer>
+        </>
     )
 }
 
