@@ -18,7 +18,7 @@ const Footer = () => {
         <>
             {head()}
             <footer className="page-footer font-small marg-f pt-4">
-                <div className="footer-copyright text-center lower-f py-3 text-light">Made with ❤️ By
+                <div className="footer-copyright text-center lower-f py-3 text-light">Made with ❤️ By 
                     <a href="https://www.linkedin.com/in/numananees/" target="_blank" className='footer-link'>Numan Anees</a>
                 </div>
             </footer>
