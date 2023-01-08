@@ -10,7 +10,7 @@ import { showSuccessMessage, showErrorMessage } from "../../../helpers/alerts";
 import Head from "next/head";
 
 const Update = ({ oldLink, token }) => {
-  const API = "https://puzzled-gabardine-clam.cyclic.app/";
+  const API = "https://puzzled-gabardine-clam.cyclic.app/api";
   // const API = "http://localhost:8000/api";
 
   const APP_NAME = "Top Dish";
@@ -236,7 +236,7 @@ const Update = ({ oldLink, token }) => {
   );
 };
 Update.getInitialProps = async ({ req, token, query }) => {
-  const API = "https://puzzled-gabardine-clam.cyclic.app/";
+  const API = "https://puzzled-gabardine-clam.cyclic.app/api";
   //   const API = "http://localhost:8000/api";
 
   const APP_NAME = "Top Dish";

@@ -4,7 +4,7 @@ import Router from "next/router";
 import { getCookie } from "../helpers/auth";
 
 const withUser = (Page) => {
-  const API = "https://puzzled-gabardine-clam.cyclic.app/";
+  const API = "https://puzzled-gabardine-clam.cyclic.app/api";
   //   const API = "http://localhost:8000/api";
 
   const APP_NAME = "Top Dish";

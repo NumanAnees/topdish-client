@@ -10,7 +10,7 @@ import { EyeFilled } from "@ant-design/icons";
 import Head from "next/head";
 
 const User = ({ user, userLinks, token }) => {
-  const API = "https://puzzled-gabardine-clam.cyclic.app/";
+  const API = "https://puzzled-gabardine-clam.cyclic.app/api";
   //   const API = "http://localhost:8000/api";
 
   const APP_NAME = "Top Dish";

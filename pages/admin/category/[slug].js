@@ -11,7 +11,7 @@ import Head from "next/head";
 // import Footer from "../../../components/Footer"
 
 const Update = ({ oldCategory, token }) => {
-  const API = "https://puzzled-gabardine-clam.cyclic.app/";
+  const API = "https://puzzled-gabardine-clam.cyclic.app/api";
   //   const API = "http://localhost:8000/api";
 
   const APP_NAME = "Top Dish";
@@ -146,7 +146,7 @@ const Update = ({ oldCategory, token }) => {
   );
 };
 Update.getInitialProps = async ({ req, query, token }) => {
-  const API = "https://puzzled-gabardine-clam.cyclic.app/";
+  const API = "https://puzzled-gabardine-clam.cyclic.app/api";
   //   const API = "http://localhost:8000/api";
 
   const APP_NAME = "Top Dish";

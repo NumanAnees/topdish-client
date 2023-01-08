@@ -9,7 +9,7 @@ import { EyeFilled } from "@ant-design/icons";
 import Footer from "../components/Footer";
 
 const Home = ({ categories }) => {
-  const API = "https://puzzled-gabardine-clam.cyclic.app/";
+  const API = "https://puzzled-gabardine-clam.cyclic.app/api";
   //   const API = "http://localhost:8000/api";
   const APP_NAME = "Top Dish";
   const head = () => (
@@ -152,7 +152,7 @@ const Home = ({ categories }) => {
 };
 
 Home.getInitialProps = async () => {
-  const API = "https://puzzled-gabardine-clam.cyclic.app/";
+  const API = "https://puzzled-gabardine-clam.cyclic.app/api";
   // const API = "http://localhost:8000/api";
 
   const APP_NAME = "Top Dish";

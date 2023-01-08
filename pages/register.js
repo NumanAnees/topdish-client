@@ -7,7 +7,7 @@ import { authenticate, isAuth } from "../helpers/auth";
 import Router from "next/router";
 import Head from "next/head";
 const Register = () => {
-  const API = "https://puzzled-gabardine-clam.cyclic.app/";
+  const API = "https://puzzled-gabardine-clam.cyclic.app/api";
   //   const API = "http://localhost:8000/api";
   const APP_NAME = "Top Dish";
   const head = () => (

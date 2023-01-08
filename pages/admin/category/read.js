@@ -9,7 +9,7 @@ import Head from "next/head";
 import Footer from "../../../components/Footer";
 
 const Read = ({ user, token }) => {
-  const API = "https://puzzled-gabardine-clam.cyclic.app/";
+  const API = "https://puzzled-gabardine-clam.cyclic.app/api";
   //   const API = "http://localhost:8000/api";
 
   const APP_NAME = "Top Dish";
