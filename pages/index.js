@@ -151,7 +151,7 @@ const Home = ({ categories }) => {
   );
 };
 
-Home.getInitialProps = async () => {
+Home.getServerSideProps = async () => {
   const API = "https://puzzled-gabardine-clam.cyclic.app/api";
   // const API = "http://localhost:8000/api";
 
