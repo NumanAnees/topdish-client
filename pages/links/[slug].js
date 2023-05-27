@@ -277,7 +277,7 @@ const Links = ({
   );
 };
 
-Links.getServerSideProps = async ({ query, req }) => {
+Links.getInitialProps = async ({ query, req }) => {
   const API = "https://puzzled-gabardine-clam.cyclic.app/api";
   //   const API = "http://localhost:8000/api";
 

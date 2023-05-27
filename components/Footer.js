@@ -25,7 +25,7 @@ const Footer = () => {
             className="footer-link"
           >
             {" "}
-            Numan Anees
+            Numan Anees & Usama
           </a>
         </div>
       </footer>

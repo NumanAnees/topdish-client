@@ -235,7 +235,7 @@ const Update = ({ oldLink, token }) => {
     </>
   );
 };
-Update.getServerSideProps = async ({ req, token, query }) => {
+Update.getInitialProps = async ({ req, token, query }) => {
   const API = "https://puzzled-gabardine-clam.cyclic.app/api";
   //   const API = "http://localhost:8000/api";
 
